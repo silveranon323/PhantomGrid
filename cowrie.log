@@ -1,0 +1,44 @@
+[2025-03-10 22:10:00] 🚨 Cowrie Honeypot Activated - Monitoring Malicious Activity...
+
+[2025-03-10 22:12:08] 🔍 **Unauthorized SSH Access Attempt Detected**
+   ├─ Attacker IP: 185.220.101.5  
+   ├─ Origin: **Berlin, Germany** 🇩🇪  
+   ├─ ISP: Mullvad VPN (Anonymous Proxy)  
+   ├─ Username Tried: `admin`  
+   ├─ Password Tried: `123456`  
+   ├─ Threat Level: **HIGH** (Tor Exit Node, Blacklisted)  
+   ├─ Risk Score: **92/100** 🚩  
+   ├─ Action: **IP flagged, monitoring continued.**  
+
+[2025-03-10 22:15:30] ⚠️ **Brute-Force Attack Detected**  
+   ├─ Attacker IP: 103.207.38.50  
+   ├─ Origin: **Mumbai, India** 🇮🇳  
+   ├─ ISP: ACT Fibernet  
+   ├─ Login Attempts: **60 attempts in 2 minutes**  
+   ├─ Common Passwords Used:  
+   │  ├─ `admin123`, `password`, `letmein`, `root`  
+   │  ├─ `qwerty`, `123456789`, `toor`  
+   ├─ Risk Score: **96/100** 🔥  
+   ├─ Action: **Auto-blocked & reported to AbuseIPDB**  
+
+[2025-03-10 22:20:42] 🔥 **Critical Alert: Malicious Command Execution Attempted**
+   ├─ Attacker IP: 45.13.132.21  
+   ├─ Origin: **Moscow, Russia** 🇷🇺  
+   ├─ ISP: Yandex LLC  
+   ├─ Malicious Command: `rm -rf /*`  
+   ├─ Threat Type: **Possible Ransomware Deployment**  
+   ├─ File Tampering Detected: `/etc/shadow` access attempt  
+   ├─ Risk Score: **99/100** ☠️  
+   ├─ Action: **IP auto-banned, logs sent to SIEM system.**  
+
+[2025-03-10 22:45:00] 📊 **Daily Threat Summary Report**  
+   ├─ **Total Attacker IPs Logged:** 3  
+   ├─ **High-Risk Attacks:** 2  
+   ├─ **Brute-Force Attempts:** 1  
+   ├─ **Malicious Commands Detected:** 1  
+   ├─ **Top 3 Countries Originating Attacks:** 🇩🇪 Germany, 🇮🇳 India, 🇷🇺 Russia  
+   ├─ **All logs saved to:** `honeypot_logs_2025-03-10.json`  
+   ├─ **Geolocation Map generated:** `threat_map_2025-03-10.html`  
+   ├─ **Threat Intelligence Report Sent to SOC Team**  
+
+[2025-03-10 23:00:00] ✅ **Honeypot Defense System Running - Monitoring Continues...**
